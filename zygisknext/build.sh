@@ -14,8 +14,8 @@ CXX="aarch64-linux-android24-clang++"
   -fno-exceptions -fno-rtti -fvisibility=hidden -fno-stack-protector \
   -mno-outline-atomics -nostdlib++ \
   -Wall -Wextra -Wno-unused-parameter \
-  src/com/zygnuke/zygnuke.cpp -o zygisk/arm64-v8a/arm64-v8a.so \
+  src/com/zygnuke/zygnuke.cpp -o zygisk/arm64-v8a.so \
   -llog -ldl -lm
-echo "[+] built zygisk/arm64-v8a/arm64-v8a.so"
-"$NDK_BIN/llvm-nm" -D --defined-only zygisk/arm64-v8a/arm64-v8a.so 2>/dev/null \
+echo "[+] built zygisk/arm64-v8a.so"
+"$NDK_BIN/llvm-nm" -D --defined-only zygisk/arm64-v8a.so 2>/dev/null \
   | grep -E 'zygisk_module_entry|c_net_' || true
