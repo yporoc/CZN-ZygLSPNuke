@@ -1,0 +1,6 @@
+id=zygnuke
+name=ZygNuke
+version=0.0.1
+versionCode=1
+author=yporoc
+description=Systemless Zygisk module: JNI binding sever, true outbound DROP, TLS plaintext capture and hot-reloadable rules
